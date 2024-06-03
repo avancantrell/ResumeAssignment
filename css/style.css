@@ -1,0 +1,61 @@
+/*Color Palette
+off white: #EDEAE5
+bright blue: #5093C5
+deep teal: #233E3E
+yellow green: #90B423
+brown: #503319*/
+
+
+/* GLOBAL STYLES */
+body{
+	background: #EDEAE5;
+}
+/*Links*/
+a{
+	color:#503319;
+}
+
+a:hover {
+	color: #90B423;
+	text-decoration:none;
+}
+
+.btn{
+	background: #233E3E; 
+	color: #fff;
+}
+
+/* HOME */
+.home{
+	/*Background image source: https://www.pexels.com/photo/round-black-wooden-table-with-4-chairs-245240/*/
+	background: url("../images/pexels-atbo-66986-245240.jpg") no-repeat;
+	background-size:cover;
+}
+.home .content-wrapper {
+	background:rgb(255 255 255 /0.7)
+}
+
+/* RESUME */
+/* Profile */
+/* Projects */
+/* Work Experience */
+/* Education*/
+
+/* FOOTER */
+footer{
+	background:#233E3E;
+	color:#EDEAE5;
+}
+
+footer a{
+	color:#90B423;
+}
+
+footer a:hover{
+	color:#EDEAE5;
+}
+/*Preemptively added social icon class because I downloaded the files from the branding guidelines pages and the images were way too large.*/
+.socialicons{
+	max-width:50px;
+	min:21px;
+}
