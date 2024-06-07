@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume | Avan Cantrell - Artist and Designer</title>
 	  <link rel="stylesheet" href="css/style.css">
+	  	<!--Adding Bubblegum Sans font again from Google Fonts using their link code.  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
   </head>
   <body class="resume">
+	<a class="btn download-link" href="#">Download PDF</a>  
     <!-- //  INTRO  // -->
     <header>
-      <h1>Avan Cantrell</h1>
-      <h2>Artist and Designer</h2>
+		<div class="content-wrapper">
+     	 <h1>Avan Cantrell</h1>
+     	 <h2>Artist and Designer</h2>
+		</div>
     </header>
 
-    <main>
+    <main class="content-wrapper">
       <!-- //  PROFILE  // -->
-      <section>
+      <section class="resume-section">
         <h2>Profile</h2>
         <p>I'm a visual artist and graphic designer with a love of storytelling. I've worked with multiple media types, but specialize in 2D illustration and character design.</p>
         <a href="index.html">Back to homepage</a>
       </section>
 
       <!-- //  PROJECTS  // -->
-      <section>
+      <section class="resume-section">
         <h2>Projects</h2>
         <!--<p>Optional paragraph for the Projects summary. Delete if not being used.</p> -->
 
         <!-- To add more items, copy this whole <section></section> block-->
-        <section>
+        <section class="project-item">
           <img src="images/CantrellAvanCreatureCrop-500.png" srcset="images/CantrellAvanCreatureCrop-1000.png 2x" alt="Concept art depicting a spiderlike creature with buttons for eyes and a body made of yarn.">
           <h3>Creature Concept</h3>
           <p>Video game concept art project for creature creation, created in Photoshop.</p>
           <a class="btn" href="https://www.artstation.com/artwork/Eaq3JK" target="_blank">See more on Artstation</a>
         </section>
-		<section>
+		<section class="project-item">
           <img src="images/MortimerKeyframe500.png" srcset="images/MortimerKeyframe-1000.png 2x" alt="Concept art depicting a tattooed man sprawled on a couch.">
           <h3>Keyframe Art</h3>
           <p>Concept art project for mood and character design, created in Photoshop.</p>
@@ -43,21 +50,24 @@
       </section>
 
       <!-- //  WORK EXPERIENCE  // -->
-      <section>
+      <section class="resume-section">
         <h2>Work Experience</h2>
         <!-- To add more items, copy this whole <section></section> block -->
-        <section>
-          <h3>Artist</h3>
+        <section class="work-item">
+          <div class="work-details"><h3>Artist</h3>
           <p>Freelance</p>
           <p>2015-Present</p>
+			  </div>
+			<div class="work-summary">
           <p>Freelance artist creating illustrations and social media branding.</p>
+			</div>
         </section>
 
         <!-- End content edits here. -->
       </section>
 
       <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <section>
+      <section class="resume-section">
         <!-- Start content edits below this line.  -->
         <h2>Education</h2>
 
@@ -78,14 +88,14 @@
 
         <!-- End content edits here. -->
       </section>
-    </main>
+</main>
 
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <footer>
 	<!-- Start content edits below this line. -->
 	<p>© 2024 by Avan Cantrell | <a href="mailto:avancantrell@gmail.com">avancantrell@gmail.com</a></p>
     <!-- I only have LinkedIn and Instagram -->
-	<ul>
+	<ul class="socials">
 	  <!--Preemptively made a social icons class to force a smaller size on the icons here; I went to the respective websites brand guidelines page and downloaded the icons directly from there instead of using the ones provided. -->
 		
       <li><!--LinkedIn Logo from their brand guidelines page: https://brand.linkedin.com/downloads-->

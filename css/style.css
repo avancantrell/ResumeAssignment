@@ -7,12 +7,25 @@ brown: #503319*/
 
 
 /* GLOBAL STYLES */
+html {
+	box-sizing:border-box;
+}
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+html, body{
+	height:100%;
+}
 body{
 	background: #EDEAE5;
+	margin:0;
+	font-family:"Verdana", Sans-serif;
 }
 /*Links*/
 a{
-	color:#503319;
+	color:#5093C5;
+	text-decoration: none;
+	font-weight:bold;
 }
 
 a:hover {
@@ -23,28 +36,104 @@ a:hover {
 .btn{
 	background: #233E3E; 
 	color: #fff;
+	padding:1%;
+	border:medium white solid;
+	border-radius:10%;
 }
 
+.content-wrapper {
+	margin: 0 auto;
+	padding: 30px;
+	max-width:900px;
+	
+}
+/* Headers and Fonts here*/
+h1,h2 {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-style: normal;
+	/*Really luke BG Sans but its a little cramped*/
+	letter-spacing:.2rem;
+	margin:-1% 0;
+	text-shadow: 1px 1px 120px #000;
+}
+h1 {
+	font-size:3rem;
+}
+h2{
+	font-style:italic;
+}
 /* HOME */
 .home{
 	/*Background image source: https://www.pexels.com/photo/round-black-wooden-table-with-4-chairs-245240/*/
-	background: url("../images/pexels-atbo-66986-245240.jpg") no-repeat;
+	background: url("../images/CyborgIllustration.jpg") no-repeat;
 	background-size:cover;
+	display:flex;
+	flex-direction: column;
 }
 .home .content-wrapper {
-	background:rgb(255 255 255 /0.7)
+	
+	flex:1 0 auto;
+}
+/*Kind a drop cap situation here*/
+.home p:first-of-type::first-letter {
+	Font-weight:bold;
+	Color:#233E3E;
+	font-size:200%;
+}
+
+.content-bg {
+	background:rgb(255 255 255 /0.85);
+	padding:30px;
+	border:inset #5093C5;
+	border-radius: 5%;
 }
 
 /* RESUME */
+.resume header::before {
+	background:url("../images/CyborgIllustration.jpg") center/ cover;
+	content: "";
+	display:block;
+	height: 375px;
+}
+
+.resume-section {
+	margin-bottom: 50px;
+}
+
+.resume-section h2 {
+	border-bottom: 2px dashed #5093C5;
+}
+.download-link {
+	position: fixed;
+	top: 5px;
+	left:5px;
+}
 /* Profile */
-/* Projects */
+.project-item {
+	display:flow-root;
+	margin:30px 0;
+}
+.project-item img{
+	width:300px;
+	float:left;
+	margin-right:20px;
+}
+/* Projects, the tutorial didn't add anything here but will keep it in for now in case we come back to this tutorial in a later lesson  */
 /* Work Experience */
-/* Education*/
+.work-item {
+	display:grid;
+	grid-template-columns: 300px 2fr;
+	column-gap: 20px;
+}
+/* Education, same note as projects*/
 
 /* FOOTER */
 footer{
 	background:#233E3E;
 	color:#EDEAE5;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
 }
 
 footer a{
@@ -54,8 +143,21 @@ footer a{
 footer a:hover{
 	color:#EDEAE5;
 }
+.socials {
+	list-style-type: none;
+	padding:0;
+}
+.socials li {
+	display:inline-block;
+	margin-left: 10px;
+	
+}
 /*Preemptively added social icon class because I downloaded the files from the branding guidelines pages and the images were way too large.*/
-.socialicons{
-	max-width:50px;
+.socials img{
+	max-width:32px;
 	min:21px;
+}
+
+.socials img:hover {
+	opacity: .5;
 }
